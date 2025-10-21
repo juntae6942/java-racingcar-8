@@ -25,7 +25,8 @@ JUnit 5와 AssertJ를 이용하여 정리한 기능 목록이 정상적으로 �
 - 자동차 이름 입력 carNames()
 - 차동차 이름 NameParser로 parse() 및 NameValidator로 검증 후 addCars()
 반환 : 자동차 이름 리스트
-
+- NumberValidator로 검증 후 repeatCount 초기화 initRepeatCount
+- 반복횟수 반환 repeatCount()
 ## NumberValidator
 - 입력받은 이동 횟수가 숫자인지 확인 validateNumber() 아닐 경우 IllegalArgumentException
 
