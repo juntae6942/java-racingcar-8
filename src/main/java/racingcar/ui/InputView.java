@@ -10,7 +10,6 @@ import racingcar.common.NumberValidator;
 public class InputView {
 
     private final NameParser nameParser;
-    private int repeatCount;
 
     public InputView(NameParser nameParser) {
         this.nameParser = nameParser;
@@ -23,13 +22,9 @@ public class InputView {
         return names;
     }
 
-    public void initRepeatCount() {
+    public int repeatCount() {
         String input = Console.readLine();
         NumberValidator.validateNumber(input);
-        repeatCount = Integer.parseInt(input);
-    }
-
-    public int repeatCount() {
-        return repeatCount;
+        return Integer.parseInt(input);
     }
 }
