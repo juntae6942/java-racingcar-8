@@ -23,4 +23,8 @@ public class Car {
     public int position() {
         return position;
     }
+
+    public String toString() {
+        return name + " : " + "-".repeat(position);
+    }
 }
