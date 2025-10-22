@@ -1,5 +1,6 @@
 package racingcar;
 
+import camp.nextstep.edu.missionutils.Console;
 import java.util.ArrayList;
 import java.util.List;
 import racingcar.application.RacingGame;
@@ -33,5 +34,6 @@ public class Application {
 
         OutputView outputView = new OutputView();
         outputView.finalResult(winner);
+        Console.close();
     }
 }
