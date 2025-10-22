@@ -26,7 +26,7 @@ class RacingGameTest {
 
     @Test
     @DisplayName("MovementChecker가 항상 true일 때 자동차 움직임 테스트")
-    void carMovesForwardWhenCheckerAllows() {
+    void carMovesForwardWhenCheckerAllowsTest() {
         MovementChecker movementChecker = new AlwaysTrueMovementChecker();
         racingGame = new RacingGame(cars, movementChecker);
 
@@ -38,7 +38,7 @@ class RacingGameTest {
 
     @Test
     @DisplayName("MovementChecker가 항상 false일 때 자동차 움직임 없음 테스트")
-    void carStopWhenCheckerNotAllows() {
+    void carStopWhenCheckerNotAllowsTest() {
         MovementChecker movementChecker = new AlwaysFalseMovementChecker();
         racingGame = new RacingGame(cars, movementChecker);
 
