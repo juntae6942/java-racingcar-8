@@ -29,7 +29,7 @@ JUnit 5와 AssertJ를 이용하여 정리한 기능 목록이 정상적으로 �
 - 반복횟수 반환 repeatCount()
 ## NumberValidator
 - 입력받은 이동 횟수가 숫자인지 확인 validateNumber() 아닐 경우 IllegalArgumentException
-
+- 음수인 경우 IllegalArgumentException
 ## NameParser
 - 자동차 이름 분리 parse()
 반환 : 자동차 이름 리스트
