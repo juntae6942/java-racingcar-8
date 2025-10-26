@@ -98,4 +98,15 @@ class InputViewTest {
                 .repeatCount())
                 .isInstanceOf(IllegalArgumentException.class);
     }
+
+    @Test
+    @DisplayName("이동 횟수 음수 입력 테스트")
+    void wrongRepeatCountTest() {
+        String input = "-3";
+        System.setIn(new ByteArrayInputStream(input.getBytes()));
+
+        assertThatThrownBy(() -> inputView
+                .repeatCount())
+                .isInstanceOf(IllegalArgumentException.class);
+    }
 }
