@@ -8,7 +8,6 @@ public class RacingGame {
 
     private final MovementChecker movementChecker;
     private final List<Car> cars;
-    private int repeatCount;
 
     public RacingGame(List<Car> cars, MovementChecker movementChecker) {
         this.cars = cars;
